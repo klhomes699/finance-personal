@@ -1,0 +1,233 @@
+<html>
+ <head>
+  <title>
+   Cash Tracking App
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <div class="container mx-auto p-4">
+   <header class="flex justify-between items-center py-4">
+    <h1 class="text-2xl font-bold">
+     Cash Tracking App
+    </h1>
+    <nav>
+     <ul class="flex space-x-4">
+      <li>
+       <a class="text-gray-700 hover:text-gray-900" href="#">
+        Home
+       </a>
+      </li>
+      <li>
+       <a class="text-gray-700 hover:text-gray-900" href="#">
+        Dashboard
+       </a>
+      </li>
+      <li>
+       <a class="text-gray-700 hover:text-gray-900" href="#">
+        Profile
+       </a>
+      </li>
+      <li>
+       <a class="text-gray-700 hover:text-gray-900" href="#">
+        Settings
+       </a>
+      </li>
+     </ul>
+    </nav>
+   </header>
+   <main class="mt-8">
+    <section class="bg-white p-6 rounded-lg shadow-md">
+     <h2 class="text-xl font-semibold mb-4">
+      Add Transaction
+     </h2>
+     <form class="space-y-4">
+      <div>
+       <label class="block text-gray-700" for="amount">
+        Amount
+       </label>
+       <input class="w-full p-2 border border-gray-300 rounded-md" id="amount" placeholder="Enter amount" type="number"/>
+      </div>
+      <div>
+       <label class="block text-gray-700" for="category">
+        Category
+       </label>
+       <select class="w-full p-2 border border-gray-300 rounded-md" id="category">
+        <option value="expenses">
+         Expenses
+        </option>
+        <option value="income">
+         Income
+        </option>
+        <option value="investment">
+         Investment
+        </option>
+        <option value="saving">
+         Saving
+        </option>
+       </select>
+      </div>
+      <div>
+       <label class="block text-gray-700" for="date">
+        Date
+       </label>
+       <input class="w-full p-2 border border-gray-300 rounded-md" id="date" type="date"/>
+      </div>
+      <div>
+       <label class="block text-gray-700" for="receipt">
+        Upload Receipt
+       </label>
+       <input class="w-full p-2 border border-gray-300 rounded-md" id="receipt" type="file"/>
+      </div>
+      <button class="w-full bg-blue-500 text-white p-2 rounded-md" type="submit">
+       Add Transaction
+      </button>
+     </form>
+    </section>
+    <section class="mt-8 bg-white p-6 rounded-lg shadow-md">
+     <h2 class="text-xl font-semibold mb-4">
+      Cash Flow Summary
+     </h2>
+     <div class="flex justify-center">
+      <img alt="Pie chart showing cash flow summary with categories: Expenses, Income, Investment, Saving" class="w-64 h-64" height="300" src="https://storage.googleapis.com/a1aa/image/NiI2Q8fuSNS9GaQQvqfR4ev2PWJ0CX4fOckvQfmLHXySCC3dC.jpg" width="300"/>
+     </div>
+     <div class="mt-8">
+      <h3 class="text-lg font-medium mb-4">
+       Daily Spending Summary
+      </h3>
+      <div class="flex justify-center">
+       <img alt="Bar chart showing daily spending summary with bars representing different categories: Expenses, Income, Investment, Saving" class="w-64 h-64" height="300" src="https://storage.googleapis.com/a1aa/image/IKJld507WKIEMRFWlqrEvce4LzeWliWOE2llGppKxbDlU4uTA.jpg" width="300"/>
+      </div>
+     </div>
+    </section>
+    <section class="mt-8 bg-white p-6 rounded-lg shadow-md">
+     <h2 class="text-xl font-semibold mb-4">
+      Personalized Recommendations
+     </h2>
+     <ul class="list-disc pl-5 space-y-2">
+      <li>
+       Consider reducing your dining out expenses to save more.
+      </li>
+      <li>
+       Invest a portion of your savings to grow your wealth.
+      </li>
+      <li>
+       Track your income sources to ensure consistent cash flow.
+      </li>
+      <li>
+       Set aside a fixed percentage of your income for savings.
+      </li>
+     </ul>
+    </section>
+    <section class="mt-8 bg-white p-6 rounded-lg shadow-md">
+     <h2 class="text-xl font-semibold mb-4">
+      Share Market/ETF Current Market Status
+     </h2>
+     <div class="space-y-4">
+      <div class="flex justify-between items-center">
+       <div>
+        <h3 class="text-lg font-medium">
+         Apple Inc. (AAPL)
+        </h3>
+        <p class="text-gray-600">
+         Purchased at: $120.00
+        </p>
+        <p class="text-gray-600">
+         Volume: 10 shares
+        </p>
+        <p class="text-gray-600">
+         Date Purchased: 2022-01-15
+        </p>
+       </div>
+       <div>
+        <p class="text-green-500 font-semibold">
+         Current Value: $145.00
+        </p>
+       </div>
+      </div>
+      <div class="flex justify-between items-center">
+       <div>
+        <h3 class="text-lg font-medium">
+         Tesla Inc. (TSLA)
+        </h3>
+        <p class="text-gray-600">
+         Purchased at: $600.00
+        </p>
+        <p class="text-gray-600">
+         Volume: 5 shares
+        </p>
+        <p class="text-gray-600">
+         Date Purchased: 2022-02-20
+        </p>
+       </div>
+       <div>
+        <p class="text-green-500 font-semibold">
+         Current Value: $720.00
+        </p>
+       </div>
+      </div>
+      <div class="flex justify-between items-center">
+       <div>
+        <h3 class="text-lg font-medium">
+         Vanguard S&amp;P 500 ETF (VOO)
+        </h3>
+        <p class="text-gray-600">
+         Purchased at: $350.00
+        </p>
+        <p class="text-gray-600">
+         Volume: 20 shares
+        </p>
+        <p class="text-gray-600">
+         Date Purchased: 2022-03-10
+        </p>
+       </div>
+       <div>
+        <p class="text-green-500 font-semibold">
+         Current Value: $400.00
+        </p>
+       </div>
+      </div>
+     </div>
+    </section>
+   </main>
+  </div>
+  <div class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-75">
+   <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+    <h2 class="text-2xl font-bold mb-6 text-center">
+     Sign In
+    </h2>
+    <form class="space-y-4">
+     <div>
+      <label class="block text-gray-700" for="email">
+       Email
+      </label>
+      <input class="w-full p-2 border border-gray-300 rounded-md" id="email" placeholder="Enter your email" type="email"/>
+     </div>
+     <div>
+      <label class="block text-gray-700" for="password">
+       Password
+      </label>
+      <input class="w-full p-2 border border-gray-300 rounded-md" id="password" placeholder="Enter your password" type="password"/>
+     </div>
+     <button class="w-full bg-blue-500 text-white p-2 rounded-md" type="submit">
+      Sign In
+     </button>
+    </form>
+    <p class="mt-4 text-center text-gray-600">
+     Don't have an account?
+     <a class="text-blue-500 hover:underline" href="#">
+      Sign Up
+     </a>
+    </p>
+   </div>
+  </div>
+ </body>
+</html>
